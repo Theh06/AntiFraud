@@ -1,0 +1,21 @@
+Classify the provided financial transaction as "fraud" or "not_fraud".
+Return the RESPONSE strictly in JSON format (no additional text):
+{
+  "decision": "fraud|not_fraud",
+  "fraud_probability": 0.0-1.0,
+  "reasons": ["short reason 1", "short reason 2"]
+}
+
+Example (input):
+{"amount": 5400, "country": "NG", "device_trust": "new_device", "ip_risk": 0.92, "time_hour": 2, "merchant_type":"crypto"}
+
+Expected answer (example):
+{"decision":"fraud","fraud_probability":0.94,"reasons":["High IP risk","New device","Night-time","Crypto merchant"]}
+
+Classify this transaction:
+{"amount": 250, "country": "DE", "device_trust": "trusted", "ip_risk": 0.2, "time_hour": 11, "merchant_type": "retail"}
+
+Answer:
+{"decision":"not_fraud","fraud_probability":0.12,"reasons":["Trusted device","Normal time of day","Moderate IP risk"]}
+
+Next, I will send examples to classify.

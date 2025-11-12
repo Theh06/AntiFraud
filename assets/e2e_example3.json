@@ -1,0 +1,22 @@
+{
+    "case": 1,
+    "input": {
+      "amount": 250,
+      "country": "DE",
+      "device_trust": "trusted",
+      "ip_risk": 0.2,
+      "time_hour": 11,
+      "merchant_type": "retail"
+    },
+    "output": {
+      "decision":"not_fraud",
+      "fraud_probability":0.12,
+      "reasons":[
+        "Trusted device",
+        "Normal time of day",
+        "Low IP risk",
+        "Retail merchant",
+        "Low-moderate amount"
+        ]
+    }
+}

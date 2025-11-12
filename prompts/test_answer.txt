@@ -1,0 +1,1 @@
+{"decision":"not_fraud","fraud_probability":0.12,"reasons":["Trusted device","Normalus paros laikas","Vidutinė IP rizika"]}
