@@ -1,4 +1,4 @@
-# Anti-fraud sistema (Idenfy) — E2E demonstracija su GPT
+# Anti-fraud sistema — E2E demonstracija su GPT
 
 Šis repo demonstruoja minimalų end-to-end fraud aptikimo srautą, naudojant:
 - `data/X.csv` — sintetinių transakcijų požymiai
