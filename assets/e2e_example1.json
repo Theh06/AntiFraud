@@ -1,22 +1,29 @@
 {
-    "case": 1,
-    "input": {
-      "amount": 12.4,
-      "country": "LT",
-      "device_trust": "trusted",
-      "ip_risk": 0.02,
-      "time_hour": 15,
-      "merchant_type": "retail"
-    },
-    "output": {
-      "decision":"not_fraud",
-      "fraud_probability":0.03,
-      "reasons":[
-        "Very low IP risk",
+  "case": 1,
+  "input": {
+    "amount": 32.27,
+    "country": "LV",
+    "device_trust": "trusted",
+    "ip_risk": 0.08,
+    "time_hour": 20,
+    "merchant_type": "travel",
+    "currency": "EUR",
+    "velocity_tx_last_24h": 0
+  },
+  "expected": {
+    "label": 0,
+    "decision": "not_fraud"
+  },
+  "output":{
+    "decision":"not_fraud",
+    "fraud_probability":0.06,
+    "reasons":[
+        "Low IP risk",
         "Trusted device",
-        "Daytime transaction",
         "Small amount",
-        "Retail merchant"
-        ]
-    }
+        "No recent activity",
+        "Legit travel merchant",
+        "Evening but typical time"
+    ]
+  }
 }

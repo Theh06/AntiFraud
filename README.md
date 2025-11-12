@@ -10,8 +10,8 @@
 ## Kaip per 30 sekundžių atkartoti prompt-testą
 1. Nukopijuokite `prompts/test_prompt.txt` turinį.
 2. Pateikite jį savo GPT agentui (pvz., ChatGPT) be pakeitimų.
-3. Gautą atsakymą (JSON) įklijuokite į `prompts/test_answer.txt` (arba saugokite kaip atskirą failą).
-4. (Pasirinktinai) Pakeiskite įvesties JSON testui — patikrinkite, ar keičiasi sprendimas ir tikimybė.
+3. Toliau pasirinkite pavyzdį.
+4. Atsiųskite įvesties JSON testui patikrinkite, ar keičiasi sprendimas ir tikimybė.
 
 ## Duomenų laukai (`X.csv`)
 - `transaction_id` — numeris

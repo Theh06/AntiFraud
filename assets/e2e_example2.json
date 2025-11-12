@@ -1,23 +1,23 @@
 {
-    "case": 1,
-    "input": {
-      "amount": 5400,
-      "country": "NG",
-      "device_trust": "new_device",
-      "ip_risk": 0.92,
-      "time_hour": 2,
-      "merchant_type": "crypto"
-    },
-    "output": {
-      "decision":"fraud",
-      "fraud_probability":0.98,
-      "reasons":[
-        "Very high IP risk",
-        "New device",
-        "Night-time transaction",
-        "Crypto merchant",
-        "High amount",
-        "Higher-risk geography"
-        ]
-    }
+  "case": 2,
+  "input": {
+    "amount": 31.82,
+    "country": "RU",
+    "device_trust": "unknown",
+    "ip_risk": 0.92,
+    "time_hour": 2,
+    "merchant_type": "retail",
+    "currency": "EUR",
+    "velocity_tx_last_24h": 5
+  },
+  "expected": {
+    "label": 1,
+    "decision": "fraud"
+  },
+  "output":{
+    "decision":"fraud",
+    "fraud_probability":0.93,
+    "reasons":["Very high IP risk","Night-time transaction",
+    "Unknown device","High velocity last 24h","Higher-risk geography","Currency mismatch (EUR)"]
+  }
 }
