@@ -12,6 +12,12 @@ Example (input):
 Expected answer (example):
 {"decision":"fraud","fraud_probability":0.94,"reasons":["High IP risk","New device","Night-time","Crypto merchant"]}
 
+Example (input):
+{"amount": 6900, "country": "FR", "device_trust": "new_device", "ip_risk": 0.82, "time_hour": 1, "merchant_type":"exchange"}
+
+Expected answer (example):
+{"decision":"fraud","fraud_probability":0.89,"reasons":["High IP risk","New device","Night-time","Exchange merchant"]}
+
 Classify this transaction:
 {"amount": 250, "country": "DE", "device_trust": "trusted", "ip_risk": 0.2, "time_hour": 11, "merchant_type": "retail"}
 
